@@ -128,7 +128,7 @@
     .main-title .hl { color: var(--accent); }
 
     .sub-text {
-      font-size: clamp(12px, 1.6vw, 18px);
+      font-size: clamp(14px, 1.9vw, 21px);
       color: rgba(255,255,255,0.6);
       text-align: center;
       line-height: 1.7;
@@ -165,7 +165,7 @@
       text-align: left;
     }
     .law-text {
-      font-size: clamp(11px, 1.3vw, 14px);
+      font-size: clamp(13px, 1.6vw, 17px);
       color: rgba(255,255,255,0.75);
       line-height: 1.75;
       word-break: keep-all;
@@ -195,8 +195,24 @@
       border-color: var(--accent);
     }
     .col-icon {
-      font-size: clamp(22px, 3vw, 32px);
-      margin-bottom: 8px;
+      width: clamp(36px, 5vw, 52px);
+      height: clamp(36px, 5vw, 52px);
+      margin: 0 auto 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(41,174,201,0.1);
+      border: 1px solid rgba(41,174,201,0.3);
+      border-radius: 12px;
+    }
+    .col-icon svg {
+      width: clamp(18px, 2.5vw, 26px);
+      height: clamp(18px, 2.5vw, 26px);
+      stroke: #29AEC9;
+      fill: none;
+      stroke-width: 1.6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
     .col-title {
       font-size: clamp(13px, 1.6vw, 17px);
@@ -205,7 +221,7 @@
       margin-bottom: 6px;
     }
     .col-body {
-      font-size: clamp(10px, 1.1vw, 12px);
+      font-size: clamp(12px, 1.4vw, 15px);
       color: rgba(255,255,255,0.55);
       line-height: 1.6;
       word-break: keep-all;
@@ -215,7 +231,7 @@
       background: rgba(41,174,201,0.12);
       border: 1px solid rgba(41,174,201,0.4);
       color: var(--accent);
-      font-size: clamp(9px, 1.1vw, 11px);
+      font-size: clamp(11px, 1.3vw, 14px);
       padding: 4px 12px;
       border-radius: 20px;
       margin-top: clamp(10px, 1.8vh, 16px);
@@ -247,7 +263,7 @@
       line-height: 1;
     }
     .stat-desc {
-      font-size: clamp(9px, 1.1vw, 12px);
+      font-size: clamp(12px, 1.4vw, 15px);
       color: rgba(255,255,255,0.45);
       margin-top: 6px;
       line-height: 1.4;
@@ -288,7 +304,7 @@
       font-weight: 400;
     }
     .big-label {
-      font-size: clamp(10px, 1.2vw, 13px);
+      font-size: clamp(13px, 1.5vw, 16px);
       color: rgba(255,255,255,0.4);
       margin-top: 5px;
     }
@@ -435,17 +451,26 @@
     <div class="main-title">3축 AX 플랫폼</div>
     <div class="three-col">
       <div class="col-card">
-        <div class="col-icon">🖥️</div>
+        <div class="col-icon">
+          <!-- 모니터 + 체크리스트 아이콘 (베타점검 Web) -->
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8h4M7 11h6M7 14h3"/></svg>
+        </div>
         <div class="col-title">베타점검</div>
         <div class="col-body">관리주체용<br>비교견적 · 입찰<br>Web 플랫폼</div>
       </div>
       <div class="col-card">
-        <div class="col-icon">📱</div>
+        <div class="col-icon">
+          <!-- 문서 + 원화 아이콘 (베타견적 App) -->
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 13a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/><path d="M10 17h4"/></svg>
+        </div>
         <div class="col-title">베타견적</div>
         <div class="col-body">공사업자용<br>견적신청 · 낙찰<br>Mobile App</div>
       </div>
       <div class="col-card">
-        <div class="col-icon">🔍</div>
+        <div class="col-icon">
+          <!-- 클립보드 + 체크 아이콘 (베타체크 App) -->
+          <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
         <div class="col-title">베타체크</div>
         <div class="col-body">점검현장용<br>AI 보고서 생성<br>Mobile App</div>
       </div>
